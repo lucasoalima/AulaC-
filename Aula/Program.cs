@@ -6,10 +6,8 @@ namespace Aula
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite a altura: ");
-
-
-            Console.WriteLine("Digite a largura: ");
+            Ex02.Renderizar();
+            Ex01.Renderizar();
 
         }
     }
