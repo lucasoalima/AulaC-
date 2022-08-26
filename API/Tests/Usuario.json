@@ -1,0 +1,17 @@
+[
+        {
+        "login" : "lucas",
+        "senha" : "123",
+        "acessos" : 554,
+        "avaliacao" : 5.4,
+        "ativo" : true
+        },
+        
+        {
+            "login" : "rodrigo",
+            "senha" : "1234",
+            "acessos" : 554,
+            "avaliacao" : 5.4,
+            "ativo" : true
+            }
+]
