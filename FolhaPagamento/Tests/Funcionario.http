@@ -12,10 +12,5 @@ Content-Type: application/json
 ### Buscar um usuário
 GET https://localhost:7079/api/funcionario/buscar/lucas
 
-### Alterar um usuário
-PUT https://localhost:7079/api/funcionario/alterar/teste
-Content-Type: application/json
-
-{
-    "name" : "teste"
-}
+### Deletar um usuário
+DELETE: https://localhost:7079/api/funcionario/deletar/123

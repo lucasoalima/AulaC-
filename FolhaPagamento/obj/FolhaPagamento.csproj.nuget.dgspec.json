@@ -1,30 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\AulaCsharp\\FolhaPagamento\\FolhaPagamento.csproj": {}
+    "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\FolhaPagamento\\FolhaPagamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\AulaCsharp\\FolhaPagamento\\FolhaPagamento.csproj": {
+    "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\FolhaPagamento\\FolhaPagamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\AulaCsharp\\FolhaPagamento\\FolhaPagamento.csproj",
+        "projectUniqueName": "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\FolhaPagamento\\FolhaPagamento.csproj",
         "projectName": "FolhaPagamento",
-        "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\AulaCsharp\\FolhaPagamento\\FolhaPagamento.csproj",
-        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\AulaCsharp\\FolhaPagamento\\obj\\",
+        "projectPath": "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\FolhaPagamento\\FolhaPagamento.csproj",
+        "packagesPath": "C:\\Users\\10112971911\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\FolhaPagamento\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\10112971911\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -35,12 +43,12 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -49,8 +57,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -62,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
