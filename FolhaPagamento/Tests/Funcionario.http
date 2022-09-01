@@ -1,0 +1,21 @@
+### Requisitar o usuário
+GET https://localhost:7079/api/funcionario/listar
+
+### Cadastrar um usuário
+POST https://localhost:7079/api/Funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "name" : "lucas"
+}
+
+### Buscar um usuário
+GET https://localhost:7079/api/funcionario/buscar/lucas
+
+### Alterar um usuário
+PUT https://localhost:7079/api/funcionario/alterar/teste
+Content-Type: application/json
+
+{
+    "name" : "teste"
+}
