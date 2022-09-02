@@ -26,7 +26,7 @@ namespace FolhaPagamento
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<DataContext>(options => options.UseSqlite("DataSource=folhas.db;Cache=shared"));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

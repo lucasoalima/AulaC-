@@ -14,3 +14,12 @@ GET https://localhost:7079/api/funcionario/buscar/lucas
 
 ### Deletar um usuário
 DELETE: https://localhost:7079/api/funcionario/deletar/123
+
+### Alterar um usuário
+PATCH : https://localhost:7079/api/funcionario/alterar/
+Content-Type: application/json
+
+{
+    "nome" : "lucas lima",
+    "cpf" : "55555"
+}

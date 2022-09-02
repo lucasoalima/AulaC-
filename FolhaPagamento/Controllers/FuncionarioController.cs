@@ -37,7 +37,7 @@ namespace FolhaPagamento.Controllers
     [Route("buscar/{cpf}")]
     public IActionResult Buscar([FromRoute] string cpf)
     {
-
+        
         // Percorrer toda a lista da mesma maneira que o for abaixo porém 
             // sem retornar o index de cada funcionario
 
@@ -87,6 +87,25 @@ namespace FolhaPagamento.Controllers
         
         
         }
+        // PATCH: /api/funcionario/alterar/
+    [Route("alterar")]
+    [HttpPatch]
+    public IActionResult Alterar([FromBody] Funcionario funcionario){
+        
+        Funcionario funcionarioBuscado = funcionarios.FirstOrDefault(
+            f => f.Cpf.Equals(funcionario.Cpf)
+        );
+        if(funcionarioBuscado != null){
+
+            funcionarioBuscado.Nome = funcionarioBuscado.Nome;
+
+            return Ok(funcionario);
+        }
+        return NotFound();
+        
+        
+        }
+    
     
     }
 
