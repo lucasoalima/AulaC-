@@ -1,0 +1,26 @@
+### Listar os funcionários
+GET https://localhost:5001/api/funcionario/listar
+
+### Buscar um funcionário
+GET https://localhost:5001/api/funcionario/buscar/123
+
+### Cadastrar um funcionário
+POST https://localhost:5001/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "diogo",
+    "cpf" : "123"
+}
+
+### Deletar um funcionário
+DELETE https://localhost:5001/api/funcionario/deletar/123
+
+### Alterar um funcionário
+PATCH https://localhost:5001/api/funcionario/alterar
+Content-Type: application/json
+
+{
+    "nome" : "diogo deconto",
+    "cpf" : "123"
+}
