@@ -47,17 +47,16 @@ namespace API_Folhas.Controllers
         }
 
         // DELETE: /api/funcionario/deletar/123
-        [Route("deletar/{cpf}")]
+        [Route("deletar/{id}")]
         [HttpDelete]
-        public IActionResult Deletar([FromRoute] string cpf)
+        public IActionResult Deletar([FromRoute] int id)
         {
-            Funcionario funcionario = funcionarios.FirstOrDefault
-            (
-                f => f.Cpf.Equals(cpf)
-            );
+            Funcionario funcionario = _context.Funcionarios.Find(id);
+            
             if (funcionario != null)
             {
-                funcionarios.Remove(funcionario);
+                _context.Funcionarios.Remove(funcionario);
+                _context.SaveChanges();
                 return Ok(funcionario);
             }
             return NotFound();
@@ -68,16 +67,9 @@ namespace API_Folhas.Controllers
         [HttpPatch]
         public IActionResult Alterar([FromBody] Funcionario funcionario)
         {
-            Funcionario funcionarioBuscado = funcionarios.FirstOrDefault
-            (
-                f => f.Cpf.Equals(funcionario.Cpf)
-            );
-            if (funcionarioBuscado != null)
-            {
-                funcionarioBuscado.Nome = funcionario.Nome;
-                return Ok(funcionario);
-            }
-            return NotFound();
+            _context.Funcionarios.Update(funcionario);
+            _context.SaveChanges();
+            return Ok(funcionario);
         }
     }
 }

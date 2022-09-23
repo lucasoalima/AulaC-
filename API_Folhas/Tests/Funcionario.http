@@ -10,17 +10,18 @@ Content-Type: application/json
 
 {
     "nome" : "diogo",
-    "cpf" : "123"
+    "cpf" : "1234567891011"
 }
 
 ### Deletar um funcionário
-DELETE https://localhost:5001/api/funcionario/deletar/123
+DELETE https://localhost:5001/api/funcionario/deletar/9
 
 ### Alterar um funcionário
 PATCH https://localhost:5001/api/funcionario/alterar
 Content-Type: application/json
 
 {
-    "nome" : "diogo deconto",
+    "funcionarioid" : 10,
+    "nome" : "diogo deconto modificado",
     "cpf" : "123"
 }

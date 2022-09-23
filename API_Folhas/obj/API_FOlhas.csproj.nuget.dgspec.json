@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\10112971911\\Desktop\\DesenvolvimentoVisualQuinta\\API_Folhas\\API_FOlhas.csproj": {}
+    "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\API_Folhas\\API_FOlhas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\10112971911\\Desktop\\DesenvolvimentoVisualQuinta\\API_Folhas\\API_FOlhas.csproj": {
+    "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\API_Folhas\\API_FOlhas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\10112971911\\Desktop\\DesenvolvimentoVisualQuinta\\API_Folhas\\API_FOlhas.csproj",
+        "projectUniqueName": "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\API_Folhas\\API_FOlhas.csproj",
         "projectName": "API_FOlhas",
-        "projectPath": "C:\\Users\\10112971911\\Desktop\\DesenvolvimentoVisualQuinta\\API_Folhas\\API_FOlhas.csproj",
+        "projectPath": "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\API_Folhas\\API_FOlhas.csproj",
         "packagesPath": "C:\\Users\\10112971911\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\10112971911\\Desktop\\DesenvolvimentoVisualQuinta\\API_Folhas\\obj\\",
+        "outputPath": "C:\\Users\\10112971911\\Desktop\\AulaCsharp\\API_Folhas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
