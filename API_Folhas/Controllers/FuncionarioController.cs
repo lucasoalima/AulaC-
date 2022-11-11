@@ -20,7 +20,8 @@ namespace API_Folhas.Controllers
         // GET: /api/funcionario/listar
         [Route("listar")]
         [HttpGet]
-        public IActionResult Listar() => Ok(_context.Funcionarios.ToList());
+        public IActionResult Listar() =>
+            Ok(_context.Funcionarios.ToList());
 
         // POST: /api/funcionario/cadastrar
         [Route("cadastrar")]
@@ -38,7 +39,8 @@ namespace API_Folhas.Controllers
         public IActionResult Buscar([FromRoute] string cpf)
         {
             //Expressão lambda
-            Funcionario funcionario = _context.Funcionarios.FirstOrDefault
+            Funcionario funcionario =
+                _context.Funcionarios.FirstOrDefault
             (
                 f => f.Cpf.Equals(cpf)
             );
@@ -46,13 +48,13 @@ namespace API_Folhas.Controllers
             return funcionario != null ? Ok(funcionario) : NotFound();
         }
 
-        // DELETE: /api/funcionario/deletar/123
+        // DELETE: /api/funcionario/deletar/1
         [Route("deletar/{id}")]
         [HttpDelete]
         public IActionResult Deletar([FromRoute] int id)
         {
-            Funcionario funcionario = _context.Funcionarios.Find(id);
-            
+            Funcionario funcionario =
+                _context.Funcionarios.Find(id);
             if (funcionario != null)
             {
                 _context.Funcionarios.Remove(funcionario);
